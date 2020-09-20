@@ -1,9 +1,9 @@
-n=int(input("Enter the limit:"))
-for a in range(1,n):
-    for b in range(1,a):
-        for c in range(1,b):
-            c=c*c
-            a=a*a
-            b=b*b
-            if (c==int(a+b)):
-                print(a,b,c)
+n=int(input("Enter the limit"))
+for i in range(1,n+1):
+    for j in range(1,i):
+        for k in range(1,n+1):
+            a=i*i
+            b=j*j
+            c=k*k
+            if((a+b)==c):
+                print(j,i,k)
