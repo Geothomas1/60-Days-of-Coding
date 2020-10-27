@@ -2,25 +2,31 @@
 using namespace std;
 int main()
 {
-    int n,m,p,k,j;
-    float atebanana=0.0,atepeanut=0.0;
-    cin>>n;
-    cin>>k;
-    cin>>j;
-    cin>>m;
-    cin>>p;
-    if(n<0 || k<0 || j<0 || m<0 || p<0)
+    int n,k,j,m,p;
+    float eatban=0.0,eatpe=0.0;
+    cin>>n>>k>>j>>m>>p;
+    if(k==0 or j==0)
     {
-        cout<<"INVALID INPUT";
-    }
-    else
+        cout<<"INVALID input";
+    }else
     {
         if(k>0)
-            atebanana =(float)m/k;
+        {
+            eatban=(float)m/k;
+
+        }
         if(j>0)
-            atepeanut =(float) p/j;
-        n=n-atebanana-atepeanut;
-        cout<<"Number of Monkeys left on the Tree:"<<n;
+        {
+            eatpe=(float)p/j;
+        }
+
+        cout<<"Total no mokeyes remain:"<<n-(eatban+eatpe);
+
     }
+    
+
+
+
+
     return 0;
 }
